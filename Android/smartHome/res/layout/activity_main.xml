@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="com.smarhome.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/chkScroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:checked="true"
+            android:text="Scroll" />
+
+        <CheckBox
+            android:id="@+id/chkReceiveText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Read" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/viewScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/txtReceive"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="#eeeeee"
+            android:hint="Menssagens da casa"
+            android:scrollbars="vertical"
+            android:typeface="monospace" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:text="Luz" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/mais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mais" />
+
+            <Button
+                android:id="@+id/menos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menos" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tm1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tomada 1" />
+
+    <Button
+        android:id="@+id/tm2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tomada 2" />
+
+    <Button
+        android:id="@+id/fechadura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fechadura" />
+
+</LinearLayout> <!-- </RelativeLayout> -->
